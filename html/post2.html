@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haitham's Blog - 2 Tips for Writing Clean and Maintainable Code</title>
+    <!--The Design-->
+    <link rel="stylesheet" href="../css/PostsStyle.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="../assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="../assets/css/brands.css" rel="stylesheet" />
+    <link href="../assets/css/solid.css" rel="stylesheet" />
+    <!--Icon-->
+    <link rel="icon" href="../assets/favicon.ico" type="image/icon type" />
+</head>
+
+<body>
+    <!--Start Heading-->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="../index.html#posts" class="logo">Haitham Blog</a>
+        </div>
+        <ul class="main-nav">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#subscribe" class="active">subscribe</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        </ul>
+        <div class="menu">
+            <a href="#"> <i class="fa-solid fa-bars"></i></a>
+            <ul class="menu-nav scale-in-center">
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#subscribe" class="active">subscribe</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <!--End Heading-->
+    <!--Start Main Content-->
+    <div class="blog" id="blog">
+        <div class="container">
+            <div class="title">
+                <h1>Tips for Writing Clean and Maintainable Code
+                </h1>
+                <p>October 29, 2024 by <a href="#">Haitham</a></p>
+            </div>
+
+            <p>Writing clean code is crucial for collaboration and scalability. In this post, we’ll go over essential tips for making your code more readable and maintainable.</p>
+            <hr>
+            <p>Following these tips will help you write code that’s not only functional but also easy to read, understand, and improve over time.</p>
+            <p class="borderd">Structured, readable code empowers developers to adapt, troubleshoot, and optimize efficiently. Whether working solo or with a team, these guidelines can improve project outcomes significantly.</p>
+            
+            <h2>Use Meaningful Variable Names</h2>
+            <p>Descriptive variable names are a cornerstone of clean code. Avoid ambiguous names like <code>x</code> or <code>temp</code>. Instead, choose names that clearly indicate the purpose of the variable. This approach enhances readability, making it easier for others (or your future self) to understand the logic behind your code.</p>
+            <p>For instance, if a variable holds a user’s age, <code>userAge</code> is much more informative than <code>temp</code>. Clear names make code self-documenting, reducing the need for excessive comments.</p>
+            <div class="sub-heading">
+                <h3>Keep Functions Small</h3>
+                <p>Each function should have a single, clear purpose. When functions become too large or handle multiple tasks, they’re harder to debug, test, and modify. Breaking down functions into smaller, single-purpose units makes your code more modular and easier to manage.</p>
+                <ol>
+                    <li>Avoid multi-task functions; focus on a single responsibility per function.</li>
+                    <li>Encapsulate code into manageable pieces, enhancing reusability and testing.</li>
+                    <li>Modular functions improve readability and prevent redundant code.</li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="second-container">
+            <div class="about">
+                <h3>About</h3>
+                <p>Welcome to my blog, where I share insights and tips for developers who want to improve their coding practices. Clean code principles are essential for sustainable software development. Join me as we dive into best practices and emerging trends in the world of programming.</p>
+            </div>
+            <div class="archive">
+                <h3>Archives</h3>
+                <ul>
+                    <li><a href="#">March 2024</a></li>
+                    <li><a href="#">January 2024</a></li>
+                    <li><a href="#">December 2023</a> </li>
+                    <li><a href="#">November 2023</a></li>
+                    <li><a href="#">August 2023</a></li>
+                    <li><a href="#">June 2023</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Start Footer-->
+    <div class="footer">
+        <div class="rights">Blog Template Built By <a
+                href="https://www.linkedin.com/in/haitham-alawneh-2146082a6/">Haitham</a></div>
+        <ul>
+            <li><a href="https://www.facebook.com/haitham.alawneh.779"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://x.com/?mx=2"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://github.com/Haitham-Nageh"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </div>
+    <!--End Footer-->
+</body>
