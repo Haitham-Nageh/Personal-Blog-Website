@@ -1,0 +1,31 @@
+/*Start Footer*/
+.footer {
+  position: relative;
+  top: 150px;
+  width: 100%;
+  text-align: center;
+  background: var(--main-color);
+  padding-top: 35px;
+  color: var(--text-color);
+  padding-bottom: 12px;
+}
+.footer div {
+  font-size: 22px;
+  font-family: monospace;
+  text-transform: capitalize;
+}
+.footer div a {
+  color: #199bff;
+  text-decoration: underline;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.footer ul img {
+  width: 30px;
+}
+
+/*End footer*/

@@ -74,7 +74,11 @@ ul {
   transition: var(--main-duration);
   font-weight: bold;
 }
-
+.main-nav img {
+  width: 17px;
+  transition: var(--main-duration);
+  font-weight: bold;
+}
 .main-nav li .active {
   color: var(--text2-color);
   background: var(--text-color);
@@ -106,10 +110,65 @@ ul {
   color: var(--text-color);
   background: var(--text2-color);
 }
+
 .menu {
   display: none;
 }
 /*End Heading*/
+
+/* Responsive Styles */
+@media (max-width: 878px) {
+  .menu {
+    display: block;
+  }
+
+  .menu img {
+    width: 18px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  /* Style for the dropdown menu */
+  .menu-nav {
+    position: fixed;
+    top: 53px;
+    right: 0;
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border-bottom: 1px solid var(--text2-color);
+  }
+
+  /* Show menu on hover */
+  .menu:hover .menu-nav {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .menu-nav li {
+    margin: 15px 0;
+  }
+
+  .menu-nav li a {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .menu-nav li a:hover {
+    color: var(--text2-color);
+  }
+}
+
 /*Start Blog*/
 .blog {
   display: flex;
@@ -185,10 +244,10 @@ hr {
   border-left: 3px solid var(--main-color);
   padding-left: 10px;
 }
-/*End Blog*/
-/*Start Footer*/
+/*End Blog*/ /*Start Footer*/
 .footer {
   position: relative;
+  top: 150px;
   width: 100%;
   text-align: center;
   background: var(--main-color);
@@ -211,27 +270,22 @@ hr {
   justify-content: center;
   gap: 40px;
 }
-.footer ul a {
-  font-size: 30px;
-  color: var(--text2-color);
-  transition: var(--trans-time);
-}
-.footer ul a:hover {
-  color: var(--text-color);
+.footer ul img {
+  width: 30px;
 }
 
 /*End footer*/
 
 /* Responsive Styles */
 @media (max-width: 796px) {
-    .blog{
-        gap: 10px;
-    }
+  .blog {
+    gap: 10px;
+  }
 }
 @media (max-width: 596px) {
-    .blog{
-       flex-direction: column;
-    }
+  .blog {
+    flex-direction: column;
+  }
 }
 @media (max-width: 905px) {
 }
